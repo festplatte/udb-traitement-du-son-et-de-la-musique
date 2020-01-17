@@ -1,0 +1,1 @@
+duree = 1024;t = 1:duree;amp = 1.0;freq = 440.0;phi = 0.0;FECH = 44100;x = amp * sin(2*pi*freq*t/FECH + phi)plot(x)

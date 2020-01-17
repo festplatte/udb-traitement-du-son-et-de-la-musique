@@ -1,0 +1,1 @@
+duree = 128;t = 1:duree;amp = 1.0;freq1 = 100.0;freq2 = 156.0;FECH = 256;x1 = amp * sin(2*pi*freq1*t/FECH)x2 = amp * sin(2*pi*freq2*t/FECH)plot(x1 + x2)
