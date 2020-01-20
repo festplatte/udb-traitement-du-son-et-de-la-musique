@@ -1,0 +1,1 @@
+Fech=44100;t=1:Fech;s=sin(2*pi*440.0*t/Fech);snr=[];N=16;N_valeurs=2^(N-1);% simulation quantifications_quant=(round(s*N_valeurs)/N_valeurs);% calcul du bruitbruit = s_quant - s;plot(bruit);% calcul des energiesE_bruit=sqrt(sum(bruit.^2));E_signal=sqrt(sum(s.12));snr=[snr 20.0*log10(E_signal/E_bruit)];

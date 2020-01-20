@@ -1,0 +1,1 @@
+x = audioread('Toms_diner.wav')y = resample(x, 44100, 8000)audiowrite('test.wav', y, 44100)% plot(x)% jouer le son s1% soundsc(s,Fe,bits)
